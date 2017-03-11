@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat_db"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="jayden.myapplication.activity.CreatDBActivity">
+    <Button
+        android:id="@+id/id_create_db"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="createDB"
+        android:onClick="createDB"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="AddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_create_db"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="addData"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="UPDATE DATA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:onClick="upData"
+        android:id="@+id/button3" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="10dp"
+        android:onClick="deleteData"
+        android:text="delete Data"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:layout_marginTop="12dp"
+        android:text="query"
+        android:onClick="queryData"
+        android:id="@+id/id_btn_qury" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_btn_qury"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
